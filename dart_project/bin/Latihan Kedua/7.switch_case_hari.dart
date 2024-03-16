@@ -5,12 +5,18 @@ void main(List<String> args) {
   String? hari = stdin.readLineSync();
 
   switch (hari) {
-    case ('senin') ('selasa') ('rabu') || ('kamis') || 'jumat' || 'sabtu':
-      print(" ini adalah hari kerja");
+    case "senin":
+    case "selasa":
+    case "rabu":
+    case "kamis":
+    case "jumat":
+    case "sabtu":
+      print("Ini adalah hari kerja");
       break;
-    case 'minggu':
-      print("ini adalah hari pekan");
+    case "minggu":
+      print("Ini adalah hari pekan");
+      break; // tambahkan break di sini
     default:
-      print("yang anda inputkan salah");
+      print("Yang Anda masukkan salah");
   }
 }
